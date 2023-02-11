@@ -1,13 +1,7 @@
+import { Box, Center, Text, VStack } from "@chakra-ui/react";
 import Head from "next/head";
 
-import { Inter } from "@next/font/google";
-import { Box, Center, VStack, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import carton from "../../public/carton.svg";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function List() {
   return (
     <>
       <Head>
@@ -19,9 +13,8 @@ export default function Home() {
       <Center minH={"75vh"} flexDirection="column">
         <VStack>
           <Box>
-            <Text fontSize={"3xl"}>Warehouse Wiki</Text>
+            <Text fontSize={"3xl"}>List</Text>
           </Box>
-          <Image src={carton} alt={"warehouse wiki"} width={150} height={250} />
         </VStack>
       </Center>
     </>
