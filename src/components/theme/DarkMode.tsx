@@ -8,10 +8,9 @@ import {
 
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
-export default function Header() {
+export default function DarkMode() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const background = useColorModeValue("gray.700", "yellow.400");
-
+  const background = useColorModeValue("gray.600", "gray.400");
   return (
     <Box
       display={{ base: "flex", md: "flex" }}
@@ -21,12 +20,7 @@ export default function Header() {
       justifyContent="space-between"
       rounded="md"
     >
-      <Button
-        data-splitbee-event="dark mode"
-        bg={background}
-        color={useColorModeValue("white", "black")}
-        onClick={toggleColorMode}
-      >
+      <Button onClick={toggleColorMode} background="none">
         {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
       </Button>
     </Box>
