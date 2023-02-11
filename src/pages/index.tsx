@@ -4,7 +4,6 @@ import { Inter } from "@next/font/google";
 import { Box, Center, VStack, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import carton from "../../public/carton.svg";
-import DarkMode from "@/components/theme/darkMode";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Warehouse Wiki</title>
-        <meta name="description" content="Simple Info on Warehouses" />
+        <meta name="description" content="we ship shit" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/carton.svg" />
       </Head>
