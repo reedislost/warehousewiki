@@ -8,9 +8,12 @@ import {
   Text,
   HStack,
   useBreakpointValue,
+  Stack,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import carton from "../../public/carton.svg";
+import forklift from "../../public/lift.svg";
+import warehouse from "../../public/warehouse.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,20 +29,33 @@ export default function Home() {
         <link rel="icon" href="/carton.svg" />
       </Head>
       <Center minH={"75vh"} flexDirection="column">
-        <VStack>
-          <Box>
-            <Text fontSize={"3xl"}>Warehouse.Wiki</Text>
-          </Box>
+        <Stack
+          direction={useBreakpointValue({ base: "column", md: "row" })}
+          mt={24}
+          p={24}
+          bg="#E6CBAB"
+          borderRadius={"md"}
+          boxShadow={"md"}
+          spacing={9}
+        >
           <Box>
             <Text fontSize={"3xl"}></Text>
           </Box>
+          <Box p={1}>
+            <Image
+              src={forklift}
+              alt={"warehouse wiki"}
+              width={width}
+              height={height}
+            />
+          </Box>
           <Image
-            src={carton}
+            src={warehouse}
             alt={"warehouse wiki"}
             width={width}
             height={height}
           />
-        </VStack>
+        </Stack>
       </Center>
     </>
   );
