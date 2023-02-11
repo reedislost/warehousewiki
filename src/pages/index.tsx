@@ -33,22 +33,8 @@ export default function Home() {
           direction={useBreakpointValue({ base: "column", md: "row" })}
           mt={24}
           p={24}
-          bg="#E6CBAB"
-          borderRadius={"md"}
-          boxShadow={"md"}
           spacing={9}
         >
-          <Box>
-            <Text fontSize={"3xl"}></Text>
-          </Box>
-          <Box p={1}>
-            <Image
-              src={forklift}
-              alt={"warehouse wiki"}
-              width={width}
-              height={height}
-            />
-          </Box>
           <Image
             src={warehouse}
             alt={"warehouse wiki"}
